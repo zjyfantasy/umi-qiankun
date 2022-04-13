@@ -1,0 +1,22 @@
+{
+  "name": "umi-qiankun",
+  "version": "1.0.0",
+  "description": "基于qiankun+umi3技术栈实现的前端微应用架构",
+  "scripts": {
+    "install": "npm-run-all install:*",
+    "install:main-app": "cd main-app && yarn",
+    "install:sub-app-1": "cd sub-app-1 && yarn",
+    "install:sub-app-2": "cd sub-app-2 && yarn",
+    "start": "npm-run-all --parallel start:*",
+    "start:main-app": "cd main-app && start cmd /k yarn start",
+    "start:sub-app-1": "cd sub-app-1 && start cmd /k yarn start",
+    "start:sub-app-2": "cd sub-app-2 && start cmd /k yarn start",
+    "build": "npm-run-all build:* ",
+    "build:main-app": "cd main-app && yarn build",
+    "build:sub-app-1": "cd sub-app-1 && yarn build",
+    "build:sub-app-2": "cd sub-app-2 && yarn build"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
